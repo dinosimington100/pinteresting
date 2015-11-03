@@ -8,8 +8,6 @@ gem 'jquery-rails'
 gem 'turbolinks'
 gem 'jbuilder', '~> 2.0'
 gem 'bootstrap-sass' ,
-gem 'sdoc', '~> 0.4.0',
-
 
 group :development, :test do
 gem 'sqlite3'
@@ -21,6 +19,8 @@ group :production do
 end 
 
 group: :doc do
+	# bundle exec rake doc:rails generate the API under doc/api.
+	gem 'sdoc', '~> 0.4.0',
 end
 
 group :development, :test do
